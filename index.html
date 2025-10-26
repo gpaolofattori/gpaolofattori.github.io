@@ -1,1 +1,73 @@
-# index.html
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cjistiel-Fattori - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Cjistiel-Fattori</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#prodotti">Prodotti</a>
+        <a href="#chi-siamo">Chi siamo</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <h2>Cioccolato artigianale, fatto con amore</h2>
+      <p>Piccola azienda di cioccolato con ricette tradizionali e ingredienti selezionati.</p>
+      <a class="cta" href="#prodotti">Scopri i prodotti</a>
+    </section>
+
+    <section id="prodotti" class="cards">
+      <h3>I nostri prodotti</h3>
+      <div class="card-list">
+        <article class="card">
+          <h4>Cioccolato fondente</h4>
+          <p>70% cacao, aroma intenso.</p>
+        </article>
+        <article class="card">
+          <h4>Cioccolato al latte</h4>
+          <p>Morbido e cremoso, per tutti i gusti.</p>
+        </article>
+        <article class="card">
+          <h4>Cioccolato ripieno</h4>
+          <p>Ripieni assortiti: nocciola, caramello, frutti di bosco.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="chi-siamo" class="about">
+      <h3>Chi siamo</h3>
+      <p>Siamo un piccolo laboratorio che unisce tradizione e creatività. Produciamo in quantità limitata per mantenere alta la qualità.</p>
+    </section>
+
+    <section id="contatti" class="contact">
+      <h3>Contattaci</h3>
+      <form id="contactForm">
+        <label>Nome:<input type="text" id="name" required></label>
+        <label>Email:<input type="email" id="email" required></label>
+        <label>Messaggio:<textarea id="message" rows="4" required></textarea></label>
+        <button type="submit">Invia</button>
+      </form>
+      <div id="formStatus" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Azienda Cioccolati — Tutti i diritti riservati</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
